@@ -8,11 +8,11 @@ public class IrACreditos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("CambiarEscena", 5);
+        Invoke("Game Over", 5);
     }
-    void CambiarEscena()
+    public void restart()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 
     // Update is called once per frame

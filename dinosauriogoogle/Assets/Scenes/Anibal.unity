@@ -934,13 +934,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1430224781}
+  - component: {fileID: 1430224782}
   m_Layer: 5
   m_Name: Game Over
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1430224781
 RectTransform:
   m_ObjectHideFlags: 0
@@ -962,6 +963,18 @@ RectTransform:
   m_AnchoredPosition: {x: -353, y: -132.87207}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1430224782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430224780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee2f7a08923c2d2429e5963a0f9fc818, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1564050708
 GameObject:
   m_ObjectHideFlags: 0
@@ -1194,6 +1207,7 @@ GameObject:
   - component: {fileID: 1881814319}
   - component: {fileID: 1881814318}
   - component: {fileID: 1881814322}
+  - component: {fileID: 1881814323}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1301,6 +1315,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntuacionActual: {fileID: 744121527}
   mejorPuntuacion: {fileID: 416881847}
+--- !u!114 &1881814323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881814317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee2f7a08923c2d2429e5963a0f9fc818, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2060668665
 GameObject:
   m_ObjectHideFlags: 0
@@ -1319,7 +1345,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2060668666
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1384,7 +1410,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2060668668}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1881814323}
+        m_TargetAssemblyTypeName: IrACreditos, Assembly-CSharp
+        m_MethodName: restart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2060668668
 MonoBehaviour:
   m_ObjectHideFlags: 0
