@@ -25,6 +25,11 @@ public class GameManager : MonoBehaviour
         puntuacionActual = 0;
     }
 
+
+    public void Perder()
+    {
+        
+    }
     public void SumarPunto()
     {
         puntuacionActual += 1;

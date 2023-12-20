@@ -46,4 +46,12 @@ public class personaje : MonoBehaviour
             animator.SetBool("estaEnSuelo", true);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.tag == "Perder")
+        {
+            GameManager.Instancia.Perder();
+        }
+    }
 }

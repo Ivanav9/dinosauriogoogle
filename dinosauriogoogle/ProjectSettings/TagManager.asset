@@ -6,6 +6,7 @@ TagManager:
   tags:
   - perder
   - Perder
+  - ReiniciarJuego
   layers:
   - Default
   - TransparentFX
