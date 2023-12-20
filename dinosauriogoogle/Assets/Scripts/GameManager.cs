@@ -5,7 +5,10 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instancia;
-    [SerializeField] public int puntuacionActual, mejorPuntuacion;
+    public int puntuacionActual, mejorPuntuacion;
+    public GameObject texto, boton;
+    public GameObject guardarJugador, guardarEnemigo;
+    public bool cronometro;
     // Start is called before the first frame update
     void Start()
     {
