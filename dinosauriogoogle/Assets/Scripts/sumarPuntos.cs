@@ -15,7 +15,7 @@ public class sumarPuntos : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter2D(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.transform.tag == "SumarPuntos")
         {
