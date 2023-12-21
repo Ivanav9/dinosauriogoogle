@@ -158,7 +158,8 @@ MonoBehaviour:
   boton: {fileID: 0}
   guardarJugador: {fileID: 0}
   guardarEnemigo: {fileID: 0}
-  cronometro: 0
+  tiempo: 120
+  texto2: {fileID: 1564050710}
 --- !u!4 &206429234
 Transform:
   m_ObjectHideFlags: 0
