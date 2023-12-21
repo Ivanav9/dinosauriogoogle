@@ -45,7 +45,7 @@ public class enemigoivan : MonoBehaviour
     public void iniciarenemigo()
     {
         transform.position = posicionincial;
-        velocidad += 1;
+        velocidad = 3;
     }
 }
 
