@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] TMP_Text texto2;
     public GameObject guardarenemigo2;
     public enemigoivan _enemigo2;
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +34,8 @@ public class GameManager : MonoBehaviour
     public void Reset()
     {
         puntuacionActual = 0;
+        guardarenemigo2.SetActive(true);
+        _enemigo2.iniciarenemigo();
     }
 
 
