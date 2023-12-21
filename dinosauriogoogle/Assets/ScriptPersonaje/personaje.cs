@@ -45,6 +45,16 @@ public class personaje : MonoBehaviour
         {
             animator.SetBool("estaEnSuelo", true);
         }
+        
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            animator.SetBool("agacharse", true);
+            
+        }
+        if (Input.GetKeyUp(KeyCode.S))
+        {
+            animator.SetBool("agacharse", false);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
