@@ -20,6 +20,7 @@ public class personaje : MonoBehaviour
         rigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        audiosource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -31,7 +32,7 @@ public class personaje : MonoBehaviour
             {
                 rigidbody.AddForce(Vector2.up * alturaSalto);
                 puedeDobleSalto = true;
-                audiosource.clip = sonidos[1];
+                audiosource.clip = sonidos[0];
                 audiosource.Play();
             }
             else if (!ComprobarSuelo.estaEnSuelo && puedeDobleSalto)
@@ -68,7 +69,7 @@ public class personaje : MonoBehaviour
         if (collision.transform.tag == "Perder")
         {
             GameManager.Instancia.Perder();
-            audiosource.clip = sonidos[0];
+            audiosource.clip = sonidos[1];
             audiosource.Play();
         }
     }

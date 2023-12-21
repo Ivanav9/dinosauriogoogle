@@ -15,7 +15,7 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //puntuacionActual.text = GameManager.Instancia.puntuacionActual.ToString();
-        //mejorPuntuacion.text = GameManager.Instancia.mejorPuntuacion.ToString();
+        puntuacionActual.text = GameManager.Instancia.puntuacionActual.ToString();
+        mejorPuntuacion.text = GameManager.Instancia.mejorPuntuacion.ToString();
     }
 }

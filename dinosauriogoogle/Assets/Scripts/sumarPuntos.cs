@@ -17,7 +17,7 @@ public class sumarPuntos : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.transform.tag == "SumarPuntos")
+        if (other.transform.tag == "Perder")
         {
             GameManager.Instancia.SumarPunto();
         }
