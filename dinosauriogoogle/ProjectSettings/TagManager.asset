@@ -7,6 +7,7 @@ TagManager:
   - perder
   - Perder
   - ReiniciarJuego
+  - SumarPuntos
   layers:
   - Default
   - TransparentFX
