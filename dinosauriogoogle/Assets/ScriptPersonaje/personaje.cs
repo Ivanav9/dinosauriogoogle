@@ -12,6 +12,8 @@ public class personaje : MonoBehaviour
     [SerializeField] Rigidbody2D rigidbody;
     [SerializeField] Animator animator;
     [SerializeField] SpriteRenderer spriteRenderer;
+    [SerializeField] AudioSource audiosource;
+    [SerializeField] AudioClip[] sonidos;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,12 +31,16 @@ public class personaje : MonoBehaviour
             {
                 rigidbody.AddForce(Vector2.up * alturaSalto);
                 puedeDobleSalto = true;
+                audiosource.clip = sonidos[1];
+                audiosource.Play();
             }
             else if (!ComprobarSuelo.estaEnSuelo && puedeDobleSalto)
             {
                 rigidbody.velocity = Vector2.zero;
                 rigidbody.AddForce(Vector2.up * alturaSalto);
                 puedeDobleSalto = false;
+                audiosource.clip = sonidos[1];
+                audiosource.Play();
             }
         }
         if (rigidbody.velocity.y > 0.1f || rigidbody.velocity.y < -0.1f)
@@ -62,6 +68,8 @@ public class personaje : MonoBehaviour
         if (collision.transform.tag == "Perder")
         {
             GameManager.Instancia.Perder();
+            audiosource.clip = sonidos[0];
+            audiosource.Play();
         }
     }
 }

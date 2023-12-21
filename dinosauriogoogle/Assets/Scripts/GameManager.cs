@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
        
         
          guardarenemigo2.SetActive(false);
+
         
     }
     public void SumarPunto()
