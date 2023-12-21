@@ -219,7 +219,6 @@ GameObject:
   - component: {fileID: 736302122}
   - component: {fileID: 736302121}
   - component: {fileID: 736302125}
-  - component: {fileID: 736302124}
   - component: {fileID: 736302126}
   m_Layer: 0
   m_Name: jumper-idle-1
@@ -315,22 +314,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &736302124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 736302120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19ae05fb81cf3a44a5bf837cf632a23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  posicionincial: {x: 0, y: 0, z: 0}
-  posicionMinima: {x: 0, y: 0, z: 0}
-  camara: {fileID: 0}
-  velocidad: 0
 --- !u!61 &736302125
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -366,13 +349,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 736302120}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19ae05fb81cf3a44a5bf837cf632a23, type: 3}
+  m_Script: {fileID: 11500000, guid: 903313d4cbe3c564588ddaa85626c16a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   posicionincial: {x: 0, y: 0, z: 0}
   posicionMinima: {x: 0, y: 0, z: 0}
   camara: {fileID: 0}
-  velocidad: 3
+  velocidad: 5
 --- !u!1 &1443562705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1374,8 +1357,8 @@ GameObject:
   - component: {fileID: 2035675753}
   - component: {fileID: 2035675752}
   - component: {fileID: 2035675751}
-  - component: {fileID: 2035675754}
   - component: {fileID: 2035675755}
+  - component: {fileID: 2035675756}
   m_Layer: 0
   m_Name: fly-eye1
   m_TagString: Perder
@@ -1470,22 +1453,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2035675754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2035675750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19ae05fb81cf3a44a5bf837cf632a23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  posicionincial: {x: 0, y: 0, z: 0}
-  posicionMinima: {x: 0, y: 0, z: 0}
-  camara: {fileID: 0}
-  velocidad: 2
 --- !u!61 &2035675755
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1512,3 +1479,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.34618425, y: 0.2605423}
   m_EdgeRadius: 0
+--- !u!114 &2035675756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035675750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 903313d4cbe3c564588ddaa85626c16a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  posicionincial: {x: 0, y: 0, z: 0}
+  posicionMinima: {x: 0, y: 0, z: 0}
+  camara: {fileID: 0}
+  velocidad: 3

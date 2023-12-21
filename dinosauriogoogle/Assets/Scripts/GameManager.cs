@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public GameObject guardarJugador, guardarEnemigo;
     [SerializeField] float tiempo = 120;
     [SerializeField] TMP_Text texto2;
+    public GameObject guardarenemigo2;
+    public enemigoivan _enemigo2;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +37,9 @@ public class GameManager : MonoBehaviour
 
     public void Perder()
     {
+       
+        
+         guardarenemigo2.SetActive(false);
         
     }
     public void SumarPunto()
